@@ -1,11 +1,10 @@
 import React from 'react';
-import TypographyExample from './two/TypographyExample.jsx';
+import GoodsBar from './one/GoodsBar.jsx';
 export default class Two extends React.Component {
     render() {
         return (
             <div>
-                <h2>第二个网页,第二次提交</h2>
-                <TypographyExample/>
+                <GoodsBar/>
             </div>
         );
     }

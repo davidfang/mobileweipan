@@ -3,21 +3,15 @@ import  style from './css/KGraph.css';
 import echarts from 'echarts';
 
 
-export default class KGraph extends React.Component {
+export default class LineGraph extends React.Component {
 
-    constructor(props){
-        super(props);
-        this.state={
-            id:this.props.graphid
-        }
-    }
     drawCharts() {
-        var myChart = echarts.init(document.getElementById(this.state.id));
+        var myChart = echarts.init(document.getElementById("linegraph"));
 
         // 指定图表的配置项和数据
         var option = {
             title: {
-                text: 'K线图'
+                text: '折线图'
             },
             tooltip: {},
             legend: {
@@ -45,7 +39,7 @@ export default class KGraph extends React.Component {
     /*注意return后面的js有自动加；的习惯*/
     render() {
         return <div>
-            <div id={this.state.id} className={style.graph}></div>
+            <div id="linegraph"   className={style.graph}    ></div>
         </div>;
     }
 }

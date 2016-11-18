@@ -2,3 +2,10 @@
 .wrap{
     background-color: red;
 }
+
+.graph{
+    width:100%;
+    height: 240px;
+    padding:0;
+    margin:0;
+}
