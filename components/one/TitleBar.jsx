@@ -29,7 +29,7 @@ export default class TitleBar extends React.Component {
         const albums = [
             {
                 title: '分时线',
-                desc: <LineGraph/>
+                desc: <LineGraph graphid="lineg"/>
             },
 
             {
@@ -48,10 +48,10 @@ export default class TitleBar extends React.Component {
 
         return (
             <Container {...this.props} className={style.wrap}>
-                <Tabs activeKey={this.state.activeTab} onAction={this.handleAction.bind(this)}>
+                <Tabs activeKey={this.state.activeTab} onAction={this.handleAction.bind(this)} style={{margin:0,padding:0}}>
                     {albums.map((ablum, i) => {
                         return (
-                            <Tabs.Item title={ablum.title} key={i} navStyle={'warning'}>
+                            <Tabs.Item title={ablum.title} key={i} navStyle={'warning'} style={{margin:0,padding:0}}>
                                 {ablum.desc}
                             </Tabs.Item>
                         )
