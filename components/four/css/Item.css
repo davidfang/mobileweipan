@@ -1,0 +1,19 @@
+.wrap{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+
+.spandiv{
+    margin-left:10px;
+    display: inline-block;
+}
+
+.icon{
+    width:2rem;
+    height:2rem;
+    display: inline-block;
+}

@@ -1,10 +1,13 @@
 import React from 'react';
+import HeaderBar from './four/HeaderBar.jsx';
+import ItemList from './four/ItemList.jsx';
 
 export default class Four extends React.Component {
     render() {
         return (
             <div>
-                <h2>第4个网页</h2>
+                <HeaderBar/>
+                <ItemList/>
             </div>
         );
     }
