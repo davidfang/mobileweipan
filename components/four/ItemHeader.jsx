@@ -15,8 +15,8 @@ export default class ItemHeader extends React.Component {
                         </div>
                     </Col>
                     <Col cols={3} className={'text-right padding' }>
-                        <Button amStyle="primary" amSize={'sm'} className={style.buttonone}>提现</Button>
-                        <Button amStyle="alert" amSize={'sm'} className={style.buttontwo}>充值</Button>
+                        <Button amStyle="primary" amSize={'sm'} className={style.buttonone} href="/cash">提现</Button>
+                        <Button amStyle="alert" amSize={'sm'} className={style.buttontwo} href="/recharge">充值</Button>
                     </Col>
                 </Grid>
             </Container>

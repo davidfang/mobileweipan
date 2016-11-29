@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!--引入样式-->
+    <link type="text/css" rel="stylesheet" href="modal.css" />
+
+    <style type="text/css">
+        .container {
+            width: 600px;
+            height: 300px;
+            position: relative;
+            border: 1px solid #777777;
+        }
+
+        .button {
+            position: absolute;
+            left: 15%;
+            top: 15%;
+            background: #eee;
+            padding: 5px 10px;
+        }
+
+        .button:hover {
+            background: #aaa;
+            cursor: pointer;
+        }    </style>
+
+
+</head>
+<body>
+<div class="container" id="container"><a class="button" onclick="ShowModal()">弹出窗口</a></div>
+
+<!-- 导入jquery -->
+<script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="modal.js"></script>
+<script type="text/javascript">        function ShowModal() {
+    $('#container').modalInfowindow({width: 300, height: 150, title: "中国", content: "中国是中华人名共和国的简称"});
+}    </script>
+</body>
+</html>

@@ -6,7 +6,7 @@ export default class ItemList extends React.Component {
     render() {
         return (
             <div>
-               <ItemHeader/>
+                <ItemHeader/>
                 <Item content="我的代金券" icon="star"/>
                 <Item content="交易记录" icon="star"/>
                 <Item content="我的账单" icon="star"/>

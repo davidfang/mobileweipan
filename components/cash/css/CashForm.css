@@ -1,0 +1,45 @@
+.form{
+    margin:1rem;
+    font-size:16px
+}
+
+
+.list{
+    margin-bottom: 2rem;
+    border: 0;
+    padding:0.5rem;
+    background-color: #0F1626;
+    margin-top:0;
+}
+
+
+.itemtop{
+    background-color: #0F1626;
+    border:none;
+    margin-top:1rem;
+    position: relative;
+}
+
+.item{
+    border-radius: 8px;
+    background-color: #0F1626;
+    border:1px white solid;
+    margin-top:1rem;
+    position: relative;
+}
+
+
+.displaymoney{
+    color: aqua;
+    position: absolute;
+    left:36%;
+    font-size:18px;
+
+}
+.display{
+    color: white;
+    z-index: 999;
+}
+
+
+

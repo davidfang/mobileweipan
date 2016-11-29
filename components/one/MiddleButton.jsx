@@ -9,7 +9,7 @@ export default class MiddleButton extends React.Component {
         return (
             <div className={'margin-v'} >
                 <div className={style.one + " "+"text-center"}>当前价格</div>
-                <div className={style.two + " "+"text-center"}>40012<Icon name={'up'}/></div>
+                <div className={style.two + " "+"text-center"}>40022<Icon name={'up'}/></div>
             </div>
         );
     }

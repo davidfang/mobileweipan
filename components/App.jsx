@@ -33,11 +33,12 @@ export default class App extends React.Component {
     render() {
         var tabbarstyle = {
             position: 'fixed',
-            bottom: '0px'
+            bottom: '0px',
+            fontSize:'16px'
         }
         return (
             <div>
-                <Container>
+                <div>
                     {this.props.children}
                     <TabBar amStyle="warning" style={tabbarstyle}>
                         <TabBar.Item icon="home" title="首页" onClick={this.toone.bind(this)}/>
@@ -45,7 +46,7 @@ export default class App extends React.Component {
                         <TabBar.Item icon="bars" title="投资学院" onClick={this.tothree.bind(this)}/>
                         <TabBar.Item icon="person" title="个人中心" onClick={this.tofour.bind(this)}/>
                     </TabBar>
-                </Container>
+                </div>
 
             </div>
         )

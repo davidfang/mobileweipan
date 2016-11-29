@@ -1,0 +1,19 @@
+.nav{
+    background-color: orange;
+    color:white;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+.icon{
+    position: absolute;
+    left: 2%;
+    display: inline-block;
+}
+.span{
+    font-size:16px;
+    font-weight: bold;
+    font-family: 微软雅黑;
+}

@@ -1,0 +1,19 @@
+.button{
+    width: 4.5rem;
+    height: 3rem;
+    background-color: white;
+    color: red;
+    display: inline-block;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 0.3rem;
+    margin-right:1.1rem;
+    margin-bottom: 1rem;
+}
+.textmoney{
+    color:red
+}
+.afterclick{
+    background-color: brown;
+    color:white
+}
