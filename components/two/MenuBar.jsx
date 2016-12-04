@@ -1,5 +1,7 @@
+
 import React from 'react';
-import  style from './css/GoodsBar.css';
+import  style from './css/MenuBar.css';
+
 import DropDownButton from '../common/DropDownButton.jsx';
 
 import {
@@ -10,7 +12,7 @@ import {
 } from 'amazeui-touch';
 
 
-export default class GoodsBar extends React.Component {
+export default class MenuBar extends React.Component {
 
     constructor(props){
         super(props);
@@ -20,8 +22,9 @@ export default class GoodsBar extends React.Component {
         };
     }
     componentWillMount(){
-        var l=['青铜', '黄金', '白银'];
-        var r=['5M', '10M', '15M'];
+
+        var l=['所有产品', '黄金', '白银'];
+        var r=['持仓中', '10M', '15M'];
         this.setState({
             leftData:l,
             rightData:r,

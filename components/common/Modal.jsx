@@ -9,12 +9,12 @@ export default class Modal extends React.Component {
         super(props);
         this.state = {
             show:'block',
-            pwd:'',
+            pwd:'123456',
             errorshow:'none'
         };
     }
     login(){
-        alert(this.state.pwd);
+        // alert(this.state.pwd);
         var passpwd=this.state.pwd;
         if(passpwd==123456) {
             //如果密码正确
