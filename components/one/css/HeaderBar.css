@@ -1,4 +1,16 @@
 .wrap  {
     width:100%;
-    background-color: orange
+    background-color: orange;
+}
+.button{
+    display: inline-block;
+    background-color: red;
+    color:white;
+    font-size: 14px;
+    width:4rem;
+    height:2rem;
+    line-height: 2rem;
+    text-align: center;
+    float:right;
+    border-radius: 0.3rem;
 }

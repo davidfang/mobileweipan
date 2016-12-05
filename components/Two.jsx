@@ -30,7 +30,7 @@ export default class Two extends React.Component {
             if(ss==0) {
                 clearInterval(this.timer);
             }
-        }.bind(this),1000)
+        }.bind(this),3000)
     }
 
     render() {

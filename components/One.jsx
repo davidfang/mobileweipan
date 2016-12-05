@@ -5,6 +5,7 @@ import TitleBar from './one/TitleBar.jsx'
 import TradeTimeInfo from './one/TradeTimeInfo.jsx'
 import FloatInfo from './one/FloatInfo.jsx'
 
+
 import Modal from './common/Modal.jsx';
 import {
     Container
@@ -12,6 +13,7 @@ import {
 
 
 export default class One extends React.Component {
+
     render() {
 
         return (
@@ -20,8 +22,8 @@ export default class One extends React.Component {
                 <GoodsBar/>
                 <TitleBar/>
                 <TradeTimeInfo />
-                <FloatInfo/>
-                <Modal/>
+                <FloatInfo />
+                {/*<Modal/>*/}
             </Container>
         );
     }

@@ -13,10 +13,9 @@ export default class HeaderBar extends React.Component {
         return (
             <Container className={style.wrap}{...this.props} >
                 <Grid >
-
                     <Col cols={4}>图像</Col>
                     <Col cols={2} className="padding">
-                        <Button amStyle="alert">充值</Button>
+                        <div className={style.button}>充值</div>
                     </Col>
                 </Grid>
             </Container>
