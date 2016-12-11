@@ -2,6 +2,10 @@ import React from 'react';
 import  style from './css/FloatInfo.css';
 import UpDownButton from './UpDownButton.jsx';
 import MiddleButton from './MiddleButton.jsx';
+import zhang from '../common/images/zhang.png';
+import die from '../common/images/die.png'
+import jiaoyijilu from '../common/images/jiaoyijilu.png'
+import shang from '../common/images/shang.png';
 
 import Pay from './pay/Pay.jsx';
 import {
@@ -19,7 +23,7 @@ export default class FloatInfo extends React.Component {
         super(props);
         this.state = {
             topinfoshow: 'block',
-            payshow:'block'
+            payshow: 'block'
         }
     }
 
@@ -31,21 +35,22 @@ export default class FloatInfo extends React.Component {
     /*  点击按钮  */
     clickUpDown() {
         //判断现在是否是休市时间
-        var isxiushi=false;
-        if(isxiushi){
+        var isxiushi = false;
+        if (isxiushi) {
             //顶栏消息
             this.setState({topinfoshow: 'block'})
             return;
         }
-        this.setState({payshow:'block'});
+        this.setState({payshow: 'block'});
     }
 
     /*  控制购买按钮显示隐藏  */
-    closePay(){
-        this.setState({payshow:'none'})
+    closePay() {
+        this.setState({payshow: 'none'})
     }
-    onPay(){
-        this.setState({payshow:'block'})
+
+    onPay() {
+        this.setState({payshow: 'block'})
     }
 
     render() {
@@ -53,13 +58,13 @@ export default class FloatInfo extends React.Component {
             <Container {...this.props} >
                 <Grid >
                     <Col cols={2}>
-                        <UpDownButton color="green" content="看跌" clickUpDown={this.clickUpDown.bind(this)}/>
+                        <UpDownButton color="#00B954" img={die}   content="看跌" clickUpDown={this.clickUpDown.bind(this)}/>
                     </Col>
                     <Col cols={2}>
-                        <MiddleButton/>
+                        <MiddleButton img={shang}/>
                     </Col>
                     <Col cols={2}>
-                        <UpDownButton color="red" content="看涨" clickUpDown={this.clickUpDown.bind(this)}/>
+                        <UpDownButton color="#EF483F" img={zhang} content="看涨" clickUpDown={this.clickUpDown.bind(this)}/>
                     </Col>
                 </Grid>
                 <TopInfo show={this.state.topinfoshow} doDisapper={this.topInfoDisapper.bind(this)}/>

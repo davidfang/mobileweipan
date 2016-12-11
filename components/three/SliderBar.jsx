@@ -60,9 +60,7 @@ export default class SliderBar extends React.Component {
 
         return (
             <Container {...this.props}>
-                <Group header="默认" noPadded>
-                    {sliderIntance}
-                </Group>
+                {sliderIntance}
             </Container>
 
         );

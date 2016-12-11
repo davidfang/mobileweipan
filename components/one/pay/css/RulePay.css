@@ -1,4 +1,22 @@
-.wrap{
-    background-color: gold;
+.wrap {
+    background-color: white;
     height: 4rem;
+    position: relative;
+}
+
+.biaochi {
+    max-width: none;
+    height: 4rem;
+    display: block;
+    position: relative;
+    left:3.28rem;
+}
+
+.zhizhen {
+    top: 0;
+    height: 4rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
 }

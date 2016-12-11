@@ -1,5 +1,5 @@
 .wrap{
-    background-color: black;
+    background-color: #111521;
     color: white;
     margin-top: 20px;
     padding-top: 9px;
@@ -8,12 +8,13 @@
 
 
 .spandiv{
-    margin-left:10px;
+    margin-left:1rem;
     display: inline-block;
 }
 
-.icon{
-    width:2rem;
-    height:2rem;
+.img{
+    width:1.8rem;
+    height:1.8rem;
     display: inline-block;
+    margin-left:0.5rem;
 }

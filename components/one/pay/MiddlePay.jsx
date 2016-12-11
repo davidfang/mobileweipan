@@ -1,6 +1,9 @@
 import React from 'react';
 
 import style from './css/MiddlePay.css';
+import jia from '../../common/images/jia.png';
+import jian from '../../common/images/jian.png'
+
 
 import {Badge, Icon} from 'amazeui-touch';
 export default class MiddlePay extends React.Component {
@@ -17,12 +20,17 @@ export default class MiddlePay extends React.Component {
 
                 </div>
                 <div className={style.bottom}>
-                    <div className={style.icon}><Icon name={'plus'}/></div>
-                    <div className={style.middle}>
-                        <span className={style.unit}>购买金额(元)</span><br/>
-                        <span className={style.moneynum}>180</span>
+                    <div className={style.icon} onClick={this.props.reduceMoney}>
+                        <img src={jian} className={style.img}/>
                     </div>
-                    <div className={style.icon}><Icon name={'plus'}/></div>
+                    <div className={style.middle}>
+                        <p className={style.topp}>购买金额(元)</p>
+                        <p className={style.bottomp}>{this.props.selectMoney}</p>
+                    </div>
+                    <div className={style.icon} onClick={this.props.addMoney}>
+                        <img src={jia} className={style.img}/>
+                    </div>
+
                 </div>
             </div>
         );

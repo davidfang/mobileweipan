@@ -1,24 +1,29 @@
 import React from 'react';
-import style from './css/ItemHeader.css';
+import styles from './css/ItemHeader.css';
+import yue from '../common/images/yue.png';
+
 import {Container, Grid, Col, Button, Icon} from 'amazeui-touch';
 
 export default class ItemHeader extends React.Component {
     render() {
         return (
-            <Container {...this.props} className={style.wrap }>
-                <Grid>
-                    <Col cols={3} className={'text-left ' }>
-                        <Icon name='star' className={style.icon}/>
-                        <div className={style.moneydiv  }>
-                            <div style={{color: 'red'}}>0.00</div>
-                            <div>账户余额</div>
-                        </div>
-                    </Col>
-                    <Col cols={3} className={'text-right padding' }>
-                        <Button amStyle="primary" amSize={'sm'} className={style.buttonone} href="/cash">提现</Button>
-                        <Button amStyle="alert" amSize={'sm'} className={style.buttontwo} href="/recharge">充值</Button>
-                    </Col>
-                </Grid>
+            <Container {...this.props} className={styles.root }>
+                <div className={styles.imgcon}>
+                    <img className={styles.img} src={yue}/>
+                </div>
+                <div className={styles.middle}>
+                    <div className={styles.pcon}>
+                        <p className={styles.topp}>0.00</p>
+                        <p className={styles.bottomp}>账户余额</p>
+                    </div>
+                </div>
+                <div className={styles.btncon}>
+                    <div className={styles.button} style={{backgroundColor: '#F65B61'}}>充值</div>
+                </div>
+                <div className={styles.btncon}>
+                    <div className={styles.button} style={{backgroundColor: '#3CA4EB'}}>提现</div>
+                </div>
+                <div className="cf"></div>
             </Container>
         );
     }

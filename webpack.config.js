@@ -7,8 +7,7 @@ var config = {
         filename: 'bundle.js',
     },
     devServer: {
-        inline: true,
-        port: 7777
+        port: 8888
     },
     module: {
         loaders: [
