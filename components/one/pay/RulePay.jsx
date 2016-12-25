@@ -15,7 +15,7 @@ export default class RulePay extends React.Component {
         return (
             <div className={style.wrap}>
                 <img src={biaochi} style={{left: this.props.leftrem+"rem"}} className={style.biaochi}
-                 onTouchStart={this.props.touchStart} onTouchMove={this.props.touchMove} onTouchEnd={this.props.touchEnd} />
+                 onTouchStart={this.props.touchStart} onTouchMove={this.props.touchMove}  onTouchEnd={this.props.touchEnd} />
                 <img src={zhizhen} className={style.zhizhen}/>
             </div>
         );

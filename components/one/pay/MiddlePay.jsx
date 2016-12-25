@@ -25,7 +25,7 @@ export default class MiddlePay extends React.Component {
                     </div>
                     <div className={style.middle}>
                         <p className={style.topp}>购买金额(元)</p>
-                        <p className={style.bottomp}>{this.props.selectMoney}</p>
+                        <p className={style.bottomp}>{this.props.currentMoney}</p>
                     </div>
                     <div className={style.icon} onClick={this.props.addMoney}>
                         <img src={jia} className={style.img}/>
